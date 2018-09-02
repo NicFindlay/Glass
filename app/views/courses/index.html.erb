@@ -1,0 +1,7 @@
+<h1>Index View</h1>
+
+<% @courses.each do |course| %>
+  <h2><%= link_to course.title, course_path(course) %> </h2>
+<% end %>
+
+<%= link_to "Add Course Review", new_course_path %>

@@ -1,0 +1,9 @@
+<h2><%= @course.title %></h2>
+<h3><%= @course.host %></h3>
+<p><%= @course.description %></p>
+
+
+
+<%= link_to "Back",root_path %>
+<%= link_to "Edit", edit_course_path(@course) %>
+<%= link_to "Delete", course_path(@course), method: :delete, data: { confirm: "Are you sure?"} %>
